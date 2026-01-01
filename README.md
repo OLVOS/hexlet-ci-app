@@ -1,3 +1,4 @@
+[![.github/workflows/running.yml](https://github.com/OLVOS/hexlet-ci-app/actions/workflows/running.yml/badge.svg)](https://github.com/OLVOS/hexlet-ci-app/actions/workflows/running.yml)
 # Example app for CI Hexlet course
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
