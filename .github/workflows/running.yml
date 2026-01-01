@@ -1,15 +1,20 @@
 name: running
 
 on: push
+
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - setup: make setup
+      - name: Setup project
+        run: make setup
 
-      - test: make test
+      - name: Run tests
+        run: make test
 
-      - lint: make lint
+      - name: Run linter
+        run: make lint
