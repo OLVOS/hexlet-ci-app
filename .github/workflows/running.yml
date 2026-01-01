@@ -1,0 +1,15 @@
+name: running
+
+on: push
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+
+      - setup: make setup
+
+      - test: make test
+
+      - lint: make lint
