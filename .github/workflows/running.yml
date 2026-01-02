@@ -10,11 +10,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup project
-        run: make setup
+      - name: Setup Node
+        uses: actions/setup-node@v4
 
-      - name: Run tests
-        run: make test
+      - name: Print Hello from Hexlet
+        uses: hexlet-components/hello-from-hexlet-action@release
 
-      - name: Run linter
-        run: make lint
+      - name: Setup, test, lint
+        run: |
+          make install
+          make test
+          make lint
+
